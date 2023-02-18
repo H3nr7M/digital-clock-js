@@ -6,6 +6,10 @@ function displayTime(){
     var dateTime = new Date();
     var hrs = dateTime.getHours();
     var min = dateTime.getMinutes();
+    // get minutes in format 00
+    if(min < 10){
+        min = '0' + min;
+    }
     var sec = dateTime.getSeconds();
     var session = document.getElementById('session');
 
